@@ -3,14 +3,23 @@
 
 int main()
 {
-    int age;
-    printf("Enter your age: ");
-    scanf("%d", &age);
+    float x;
+    float y;
+    float result;
 
-    if (age < 0 || age > 120)
-        printf("Invalid Age");
-    else{
-        printf("Thank you, correct input");}
-    printf("\n Done");
+    printf("Enter the two number:  ");
+    scanf("%f%f", &x, &y);
+
+    if (y != 0)
+    {
+        result = x / y;
+        printf("Result = \n%.2f\n", result);
+    }
+    else
+    {
+        printf("Cannot divide by 0");
+    }
+
+    printf("\nDone");
     return 0;
 }

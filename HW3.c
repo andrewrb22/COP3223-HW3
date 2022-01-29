@@ -7,25 +7,18 @@ int main()
     char letterGrade = 'x';
 
     printf("Enter your score:");
-    scanf("%d", score);
+    scanf("%d", &score);
 
     if (score >= 0 && score <= 100)
     {
-        if (score >= 90)
-            letterGrade = "A";
-        else if (score >= 80)
-            letterGrade = "B";
-        else if (score >= 70)
-            letterGrade = "C";
-        else if (score >= 60)
-            letterGrade = "D";
-        else
-            letterGrade = "F";
+        if (score >= 90) letterGrade = "A";
+        if (score >= 80 && score< 90) letterGrade = "B";
+        if (score >= 70 && score< 80) letterGrade = "C";
+        if (score >= 60 && score< 70) letterGrade = "D";
+        if(score < 60 ) letterGrade = "F";
     }
-    if (letterGrade == "x")
-        printf("Invalid Score\n");
-    else
-        printf("You earned the grade of %c\n", letterGrade);
+    if (letterGrade == "x")  printf("Invalid Score\n");
+    else  printf("You earned the grade of %c\n", letterGrade);
 
     return 0;
 }

@@ -9,8 +9,8 @@ int main()
 
     if (age < 0 || age > 120)
         printf("Invalid Age");
-    else
-        printf("Thank you, correct input");
-    printf("Done");
+    else{
+        printf("Thank you, correct input");}
+    printf("\n Done");
     return 0;
 }

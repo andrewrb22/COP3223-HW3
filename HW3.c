@@ -3,23 +3,29 @@
 
 int main()
 {
-    float x;
-    float y;
-    float result;
+    int score;
+    char letterGrade = 'x';
 
-    printf("Enter the two number:  ");
-    scanf("%f%f", &x, &y);
+    printf("Enter your score:");
+    scanf("%d", score);
 
-    if (y != 0)
+    if (score >= 0 && score <= 100)
     {
-        result = x / y;
-        printf("Result = \n%.2f\n", result);
+        if (score >= 90)
+            letterGrade = "A";
+        else if (score >= 80)
+            letterGrade = "B";
+        else if (score >= 70)
+            letterGrade = "C";
+        else if (score >= 60)
+            letterGrade = "D";
+        else
+            letterGrade = "F";
     }
+    if (letterGrade == "x")
+        printf("Invalid Score\n");
     else
-    {
-        printf("Cannot divide by 0");
-    }
+        printf("You earned the grade of %c\n", letterGrade);
 
-    printf("\nDone");
     return 0;
 }

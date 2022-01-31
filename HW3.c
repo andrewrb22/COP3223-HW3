@@ -11,14 +11,15 @@ int main()
 
     if (score >= 0 && score <= 100)
     {
-        if (score >= 90) letterGrade = "A";
-        if (score >= 80 && score< 90) letterGrade = "B";
-        if (score >= 70 && score< 80) letterGrade = "C";
-        if (score >= 60 && score< 70) letterGrade = "D";
-        if(score < 60 ) letterGrade = "F";
+        if (score >= 90) letterGrade = 'A';
+        if (score >= 80 && score< 90) letterGrade = 'B';
+        if (score >= 70 && score< 80) letterGrade = 'C';
+        if (score >= 60 && score< 70) letterGrade = 'D';
+        if(score < 60 ) letterGrade = 'F';
     }
-    if (letterGrade == "x")  printf("Invalid Score\n");
-    else  printf("You earned the grade of %c\n", letterGrade);
+
+    if (letterGrade == 'X')  printf("Invalid Score\n");
+    else  printf("You earned the grade of %c", letterGrade);
 
     return 0;
 }

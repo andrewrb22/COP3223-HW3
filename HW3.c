@@ -38,5 +38,7 @@ switch (choice){
 default: printf("Invalid selection");
 }
 
+printf("\nThank you");
+
     return 0;
 }

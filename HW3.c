@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 int Lowest(int a, int b, int c)
 {
     // if  a is lowest 
@@ -31,11 +32,14 @@ int main()
 int a,b,c;
 char choice;
 
-     printf("Enter your three integers: ");
-    scanf("%d %d %d",&a,&b,&c);
-    printf("You have entered the numbers: %d,%d and %d",a,b,c);
+    printf("Enter your three integers: ");
 
- printf("\n\nChoose one of the options:\n");
+    scanf("%d %d %d",&a,&b,&c);
+
+
+    printf("You have entered the numbers: %d, %d, %d \n", a,b,c);
+ 
+    printf("\n\nChoose one of the options:\n");
     printf("\tA - Print the lowest number entered\n\tB - Print the highest number entered");
     printf("\n\tC - Print whether the first number entered is an even or odd number");
     printf("\n\tD - print the division of third number entered by the sum of first two numbers entered");

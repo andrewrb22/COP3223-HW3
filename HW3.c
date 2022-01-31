@@ -27,11 +27,13 @@ switch (choice){
 
     case '2': printf("\tAmerica\n");
     break;
+
     case '3': printf("\tEuropa\n");
     break;
 
     case '4': printf("\tAsia\n");
     break;
+    
     case '5': printf("\tAustralia\n");
     break;
 
